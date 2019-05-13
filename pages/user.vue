@@ -1,19 +1,22 @@
 <template>
-  <div class="user">
-     嵌套路由  {{name}}
-     <nuxt-child></nuxt-child>
-  </div>
+  <no-ssr>
+    <div class="user">
+      嵌套路由  {{name}}
+      <nuxt-child></nuxt-child>
+    </div>
+  </no-ssr>
 </template>
 <script>
   export default {
     layout:"users",
     asyncData(context){
       console.log(context)
+
       return new Promise((resolve)=>{
         //  测试顶部加载条
-          setTimeout(() => {
+         // setTimeout(() => {
                 resolve({name:"测试数据加载"})
-          }, 3000);
+          //}, 3000);
       })
     },
   }

@@ -28,7 +28,8 @@ export default {
   
   width:100%;
   height:100%;
-  background:rgba(0,0,0,.9);
+  background:rgb(0,0,0);
+  color:#fff;
   text-align: center;
   padding-top:200px;
   font-size:30rpx;

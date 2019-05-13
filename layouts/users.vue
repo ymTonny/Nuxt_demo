@@ -1,12 +1,16 @@
 <template>
   <div class="user_layout">
     <div class="_user_layout">自定义布局layouts</div>
+    <Visits/>
     <nuxt/>
   </div>
 </template>
 <script>
+import Visits from "@/components/visits"
 export default {
-  
+    components:{
+      Visits
+    }
 }
 </script>
 <style scoped>

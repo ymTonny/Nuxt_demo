@@ -38,6 +38,7 @@ export default {
   plugins: [
     {src:'@/plugins/iview'},
     {src:"@/plugins/after",ssr:false }   //配置插件iview中的loading
+    //{src:"@/plugins/vue-notifications",ssr:false }   //配置toast插件
   ],
 
   /*
@@ -63,6 +64,10 @@ export default {
         "^/api/" : ""
       }
     }
+  },
+  // 配置中间件
+  router:{
+    middleware:["visits"]
   },
   /*
   ** Build configuration

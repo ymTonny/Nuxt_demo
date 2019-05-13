@@ -11,10 +11,12 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "@nuxtjs/axios": "^5.3.6",
     "cross-env": "^5.2.0",
-    "nuxt": "^2.4.0",
     "iview": "3.1.5",
-    "@nuxtjs/axios": "^5.3.6"
+    "mini-toastr": "^0.8.1",
+    "nuxt": "^2.4.0",
+    "vue-notifications": "^1.0.0"
   },
   "devDependencies": {
     "nodemon": "^1.18.9",
