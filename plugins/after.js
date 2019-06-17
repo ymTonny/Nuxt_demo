@@ -7,12 +7,13 @@ export default async ({ app,redirect })=>{
   //路由开始
   app.router.beforeEach((to,from,next) => {
     iView.LoadingBar.start();
-    console.log(to)
-    if(to.path!="/"&&app.store.state.demo.users.username=='world'){
-      redirect("/");
-      return false;
-    }else{
+    console.log(to,app)
+    // if(to.path!="/"&&app.store.state.demo.users.username=='world'){
+    //   redirect("/");
+    //   // iView.LoadingBar.finish();
+    //   return false;
+    // }else{
       next()
-    }
+    // }
   });
 }
